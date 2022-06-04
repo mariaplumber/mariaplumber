@@ -25,3 +25,18 @@ Output: Enter a 10
 Enter b 49
 The sum is 59
 
+MULTIPLICATION
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter a");
+	scanf("%d",&a);
+	printf("Enter b");
+	scanf("%d",&b);
+	printf("Product is %d", a*b);
+	return 0;
+}
+OUTPUT: Enter a10
+Enter b20
+Product is 200
