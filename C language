@@ -26,17 +26,17 @@ Enter b 49                                  #include<stdio.h>
 The sum is 59                               int main()
                                             {
 MULTIPLICATION                                  printf("%lu \n", sizeof(int));
-#include<stdio.h>                               printf("%lu \n", sizeof(int));
-int main()                                      printf("%lu \n", sizeof(int));
-{                                               printf("%lu \n", sizeof(int));
-	int a,b;                                return 0;
-	printf("Enter a");                  }
-	scanf("%d",&a);                   OUTPUT: 4
-	printf("Enter b");                        4
-	scanf("%d",&b);                           1
-	printf("Product is %d", a*b);             8
-	return 0;
-}
-OUTPUT: Enter a10
+#include<stdio.h>                               printf("%lu \n", sizeof(float));
+int main()                                      printf("%lu \n", sizeof(char));
+{                                               printf("%lu \n", sizeof(double));
+	int a,b;                                printf("%lu \n", sizeof(long));
+	printf("Enter a");                      return 0;                  
+	scanf("%d",&a);                     }
+	printf("Enter b");                 OUTPUT: 4
+	scanf("%d",&b);                            4
+	printf("Product is %d", a*b);              1
+	return 0;                                  8
+}                                                  4
+OUTPUT: Enter a10                      
 Enter b20
 Product is 200
