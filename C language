@@ -11,14 +11,14 @@ Output: Hello World
 
 ADDITION
 #include<stdio.h>
-int main()
-{
-    int a,b;
-    printf("Enter a");
-    scanf("%d", &a);
-    printf("Enter b");
-    scanf("%d", &b);
-    printf("The sum is %d", a+b);
+int main()                                     #include<stdio.h>
+{                                              int main()
+    int a,b;                                   {
+    printf("Enter a");                             int a=100, b=50;
+    scanf("%d", &a);                               printf("Sum is %d", a+b);
+    printf("Enter b");                             return 0;
+    scanf("%d", &b);                           }
+    printf("The sum is %d", a+b);              Output: The sum is 150
     return 0;
 }
 Output: Enter a 10
