@@ -38,35 +38,34 @@ int main()                                      printf("%lu \n", sizeof(char));
 	return 0;                                  8
 }                                                  4
 OUTPUT: Enter a10                      
-Enter b20
-Product is 200
-
- MODULO:
- #include<stdio.h>
-int main()
-{
-	int a=65, b=7;
-	printf("a % b= %d", a%b);
-	return 0;
-}
-OUTPUT: a b= 2
-
-ARITHMETIC OPERATORS:
-	#include<stdio.h>
-int main()
-{
-	int a=54, b=67;
-	printf("a==b = %d\n", a==b);
-	printf("a!=b = %d\n", a!=b);
-	printf("a>b = %d\n", a>b);
-	printf("a<b = %d\n", a<b);
-	printf("a>=b = %d\n", a>=b);
-	printf("a<=b = %d\n", a<=b);
-	return 0;
-}
-
-Output:  a==b = 0
-a!=b = 1
+Enter b20                                   PRINTING MULTIPLICATION TABLE:
+Product is 200                                #include<stdio.h>
+                                              int main()
+ MODULO:                                      {
+ #include<stdio.h>                                int a;
+int main()                                        printf("Enter the number");
+{                                                 scanf("%d", &a);
+	int a=65, b=7;                            printf("The table of %d is:\n", a);
+	printf("a % b= %d", a%b);                 printf("%d * 1 = %d\n", a*1, a);
+	return 0;                                 printf("%d * 2 = %d\n", a*2, a);
+}                                                 printf("%d * 3 = %d\n", a*3, a);
+OUTPUT: a b= 2                                    printf("%d * 4 = %d\n", a*4, a);
+                                                  printf("%d * 5 = %d\n", a*5, a);
+ARITHMETIC OPERATORS:                             printf("%d * 6 = %d\n", a*6, a);
+#include<stdio.h>                                 printf("%d * 7 = %d\n", a*7, a);
+int main()                                        printf("%d * 8 = %d\n", a*8, a);
+{                                                 printf("%d * 9 = %d\n", a*9, a);
+	int a=65, b=72;                           printf("%d * 10 = %d\n", a*10, a);
+	printf("a==b = %d\n", a==b);              return 0;
+	printf("a!=b = %d\n", a!=b);          }
+	printf("a>b = %d\n", a>b);            OUTPUT: Enter the Number
+	printf("a<b = %d\n", a<b);                    6
+	printf("a>=b = %d\n", a>=b);                  The table of 6 is:
+	printf("a<=b = %d\n", a<=b);                  6 * 1 = 6
+	return 0;                                     6 * 2 = 12
+}	                                              .
+Output: a==b = 0                                      .
+a!=b = 1                                              6 * 10 = 60
 a>b = 0
 a<b = 1
 a>=b = 0
