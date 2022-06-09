@@ -40,3 +40,15 @@ int main()                                      printf("%lu \n", sizeof(char));
 OUTPUT: Enter a10                      
 Enter b20
 Product is 200
+
+ MODULO:
+ #include<stdio.h>
+int main()
+{
+	int a=65, b=7;
+	printf("a % b= %d", a%b);
+	return 0;
+}
+OUTPUT: a b= 2
+
+
