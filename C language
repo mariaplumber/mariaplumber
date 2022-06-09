@@ -51,4 +51,25 @@ int main()
 }
 OUTPUT: a b= 2
 
+ARITHMETIC OPERATORS:
+	#include<stdio.h>
+int main()
+{
+	int a=54, b=67;
+	printf("a==b = %d\n", a==b);
+	printf("a!=b = %d\n", a!=b);
+	printf("a>b = %d\n", a>b);
+	printf("a<b = %d\n", a<b);
+	printf("a>=b = %d\n", a>=b);
+	printf("a<=b = %d\n", a<=b);
+	return 0;
+}
+
+Output:  a==b = 0
+a!=b = 1
+a>b = 0
+a<b = 1
+a>=b = 0
+a<=b = 1
+
 
