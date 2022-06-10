@@ -128,15 +128,42 @@ int main()
 		break;                                            Number is 4
 		
 		case 4:                                           Enter the number20
-		printf("Nuber is 4");                             Number does not exist
+		printf("Number is 4");                             Number does not exist
 		break;
 		
 		default:                                   NOTE: Here we use colon (:) next to case and default..Switch and case can be int and char only..All CASES 
 		printf("Number does not exist");                 will come under SWITCH.. No ; : , next to switch and there will always come the variable after switch
-	}
+	}                                                        If we don't use break, it will print all the cases.
 	return 0;
 	
 }
+
+NESTED SWITCH CASE:
+#include<stdio.h>
+int main()
+{
+	int a, marks;
+	printf("Enter the number ");           OUTPUT:Enter the number 17
+	scanf("%d", &a);                              Enter marks 84                             
+	printf("Enter marks ");                       Number is 17
+	scanf("%d", &marks);                          Marks are 84
+	switch(a){
+		case 17:
+		printf("Number is 17\n");           Enter the number 17
+		switch(marks) {                     Enter marks 30
+			                            Number is 17
+                case 84:                            Marks are not 84
+		printf("Marks are 84");
+		break;                             Enter the number 20
+		                                   Enter marks 90
+		default:
+		printf("Marks are not 84");      (No result because the marks is nested inside 'a' that is number..If a will not be equal to 17 then it will not 
+}                                                 continue ahead.) But if we want to print that the number is not 17 then we can add another default between the second
+	}                                         last and the third last bracket which will become the default of switch(a)..Write printf("Number is not 17"); after 
+	return 0;                                 that default.
+}
+	
+
 	
 
 	
