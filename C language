@@ -4,8 +4,6 @@ int main()
 {
     printf("Hello World");
     return 0;
-
-    
 }
 Output: Hello World
 
@@ -44,7 +42,7 @@ Product is 200                                #include<stdio.h>
  MODULO:                                      {
  #include<stdio.h>                                int a;
 int main()                                        printf("Enter the number");
-{                                                 scanf("%d", &a);
+{                                                 scanf("%d", &a);                     NOTE: Do not forget to use & before variable whenever we use %
 	int a=65, b=7;                            printf("The table of %d is:\n", a);
 	printf("a % b= %d", a%b);                 printf("%d * 1 = %d\n", a*1, a);
 	return 0;                                 printf("%d * 2 = %d\n", a*2, a);
@@ -72,4 +70,90 @@ a>=b = 0
 a<=b = 1
 NOTE: && NEEDS BOTH VALUES TRUE TO GIVE ANSWER AS 1, || NEEDS ONE VALUE AS TRUE TO GIVE ANSWER AS 1, ! (LOGICAL NOT) REVERSES THE VALUE OF 0 TO 1 AND VICEVERSA. 
       EXCLUSIVE OR OPERATOR (A^B) REQUIRES ONE VALUE TO BE TRUE AND ONE TO BE FALSE TO GIVE ANSWER AS 1 OTHERWISE IT WILL GIVE 0.
+
+BASIC:
+#include<stdio.h>                                               #include<stdio.h>
+int main()                                                      int main()
+{                                                               {
+	int a=45, b=85;                                              int a=45;
+	printf("Value of a and b is %d", b,a);                       float b=85.333;
+	return 0;                                                    printf("Value of a is %d and b is %f", a,b);
+}                                                                    return 0;
+OUTPUT:Value of a and b is 85                                   }
+                                                                 OUTPUT: Value of a is 45 and b is 85.333000
+NOTE: If we use %a.bf (ex: %0.7f then it will give accuracy upto 7 decimal points. Hera 85.3330000..Similarly, for %10.4f it will leave a space for 10 characters that 
+is ___85.3300 (3 spaces in the beginning)
+%c-character  %d-int  %f-float  %l-long  %lf-double  %Lf-long double
+
+CONSTANTS:
+#include<stdio.h>
+#define PI 3.14  //here it is constant and cannot be changed in the program further..Also no ; req. here
+int main()
+{
+	printf("Value of pi is %f", PI);       //we can also use const keyword ex: const b=3.14..Value can't be changed in the whole program
+	return 0;
+}
+OUTPUT: Value of pi is 3.140000                  NOTE: \n is one single character.
+
+IF ELSE CONDITIONS
+#include<stdio.h>
+int main()
+{
+	int age;
+	printf("Enter your age");             
+	scanf("%d", &age);                               OUTPUT:Enter your age65
+	if(age>=18) {                                           You can vote
+		printf("You can vote"); 
+	}                                                       Enter your age16               NOTE: No ; : or , after if
+	else if(age>=10){                                       You can vote for kids
+		printf("You can vote for kids");             
+	}                                                       Enter your age8                                                     
+	else {                                                  You cannot vote
+		printf("You cannot vote");
+	}
+	return 0;
+}
+
+SWITCH CASE STATEMENT:
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter the number");
+	scanf("%d", &a);                                  OUTPUT: Enter the number17
+	switch(a){                                                Number is 17
+		case 17:
+		printf("Number is 17");                           Enter the number4
+		break;                                            Number is 4
+		
+		case 4:                                           Enter the number20
+		printf("Nuber is 4");                             Number does not exist
+		break;
+		
+		default:                                   NOTE: Here we use colon (:) next to case and default..Switch and case can be int and char only..All CASES 
+		printf("Number does not exist");                 will come under SWITCH.. No ; : , next to switch and there will always come the variable after switch
+	}
+	return 0;
+	
+}
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
