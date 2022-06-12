@@ -162,6 +162,36 @@ int main()
 	}                                         last and the third last bracket which will become the default of switch(a)..Write printf("Number is not 17"); after 
 	return 0;                                 that default.
 }
+
+DO WHILE LOOP:
+#include<stdio.h>
+int main()
+{
+	int a, i=0;
+	printf("Enter a number ");        OUTPUT: Enter a number 10
+	scanf("%d", &a);                          0123456789
+	
+	do {
+		printf("%d", i);         NOTE: Here we will not use & before variable because it is only used in scanf that is whenever we take a value from user.
+		i=i+1;
+		
+	} while(i<a);
+	return 0;
+	
+}
+MULTIPLICATION TABLE USING DO WHILE LOOP:
+#include<stdio.h>
+int main()
+{
+	int a; int i=1;                       OUTPUT: Enter a number 3
+	printf("Enter a number ");                    3 * i = 36 * i = 39 * i = 312 * i = 315 * i = 318 * i = 321 * i = 324 * i = 327 * i = 330 * i = 3
+	scanf("%d", &a);
+	do{
+		printf("%d * i = %d", a*i, a);
+		i=i+1;
+        }  while(i<11);
+	return 0;
+}
 	
 
 	
