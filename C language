@@ -230,6 +230,19 @@ int main()                                             OUTPUT: 0 0
 	return 0;
 	               NOTE: If we write (i=0, j=0; i<5, j<3; i++, j++) it will consder the last term of expression 2 i.e it will consider j<3 and print 00 11 22 only
 }                            for(i=0, j=0; j=3, i<5; i++, j++) it will make j as 3 but will print values of i<5 i.e 30 31 32 33 34
+
+USE OF LOOPS WITHOUT BREAK AND CONTINUE STATEMENTS:
+#include<stdio.h>
+int main()                                  OUTPUT: Enter your age 3
+{                                                   Enter your age 4 
+	int i;                                      Enter your age 6
+	for(i=0; i<10; i++) {                       Enter your age 12
+		                                   (Stopped executing after this because 12>10)
+	printf("Enter your age ");
+	scanf("%d\n", &i);
+	}
+	return 0;
+}
                             
 
 
