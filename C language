@@ -192,7 +192,48 @@ int main()
         }  while(i<11);
 	return 0;
 }
+
+WHILE LOOP:
+#include<stdio.h>                                 OUTPUT: Enter the number 10
+int main()                                                0
+{                                                         1
+	int a, i=0;                                       2
+	printf("Enter the number ");                      3
+	scanf("%d", &a);                                  4
+	while(i<a) {                                      5
+		printf("%d\n", i);                        6
+		i=i+1;                                    7
+	}                                                 8
+	return 0;                                         9
 	
+}
+
+FOR LOOP:
+#include<stdio.h>
+int main()                             OUTPUT: 01234
+{
+	int i;
+	for(i=0; i<5; i++) {
+		printf("%d", i);
+	}
+	return 0;
+}
+
+FOR LOOP 2:
+#include<stdio.h>
+int main()                                             OUTPUT: 0 0
+{                                                              1 1
+	int i, j;                                              2 2                            
+	for(i=0, j=0; i<5, j<5; i++, j++) {                    3 3     NOTE: Here we could also write int i=0, j=0;
+		printf("%d %d\n", i, j);                       4 4                                    printf(; i<5, j<5; i++, j++)
+	}                                                      5 5           It will print the same result.              
+	return 0;
+	               NOTE: If we write (i=0, j=0; i<5, j<3; i++, j++) it will consder the last term of expression 2 i.e it will consider j<3 and print 00 11 22 only
+}                            for(i=0, j=0; j=3, i<5; i++, j++) it will make j as 3 but will print values of i<5 i.e 30 31 32 33 34
+                            
+
+
+
 
 	
 
