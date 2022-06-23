@@ -243,6 +243,45 @@ int main()                                  OUTPUT: Enter your age 3
 	}
 	return 0;
 }
+
+JUST:  (WRONG) The aim is if we enter the number 17 then it should print numbers starting from 0 to infinite loop..If we enter the number 4 then it should print Done.
+#include<stdio.h>
+int main()
+{
+	int a,i=0;
+	printf("Enter the number");
+	scanf("%d\n", &a);                    OUTPUT: Enter the number17
+		do {
+		printf("%d\n", i);
+	    i=i+1;	
+	}
+	while (a=17);
+	if(a=4) {
+		printf("Done");
+	} 
+	return 0; 
+}
+
+JUST 2: (WRONG)
+#include<stdio.h>
+int main()
+{
+	int a,i=0;                          OUTPUT: Enter the number17
+	printf("Enter the number");                 0
+	scanf("%d", &a);                            1
+	if(a=17) {                                  2
+		do {                                3
+		printf("%d\n", i);                  4
+	    i=i+1;	
+	}                                          Enter the number4
+	while (i<5);                               0
+}                                                  1
+else {                                             2
+	printf("Done");                            3
+}                                                  4
+	
+	return 0; 
+}
                             
 
 
