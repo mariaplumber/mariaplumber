@@ -262,26 +262,49 @@ int main()
 	return 0; 
 }
 
-JUST 2: (WRONG)
+JUST 2: 
 #include<stdio.h>
 int main()
 {
 	int a,i=0;                          OUTPUT: Enter the number17
 	printf("Enter the number");                 0
 	scanf("%d", &a);                            1
-	if(a=17) {                                  2
+	if(a==17) {                                 2
 		do {                                3
-		printf("%d\n", i);                  4
+		printf("%d\n", i);                  4                      NOTE: Put == sign here in the bracktet
 	    i=i+1;	
 	}                                          Enter the number4
-	while (i<5);                               0
-}                                                  1
-else {                                             2
-	printf("Done");                            3
-}                                                  4
+	while (i<5);                               Done                          
+}                                                  
+else {                                             
+	printf("Done");                            
+}                                                  
 	
 	return 0; 
 }
+
+BREAK WITH FOR LOOP
+#include<stdio.h>
+int main()
+{
+	int i;
+	for(i=0; i<10; i++) {                  NOTE: Here the output is slight different than what we expect. In the beginning it takes says Enter your age and we 
+		printf("Enter your age");            enter 2 but it does not show Enter your age again. We have to enter another smaller number here, 3 to get the 
+		scanf("%d\n", &i);                   required output. Then it will work fine. But as soon as you enter a number greater than 10, it will ask you for 
+		if(i>10) {                           Enter a number instead of stopping..Now again if you enter a number greater than 10 then it will stop.
+			break;
+		}
+	}              
+	
+}
+OUTPUT:
+Enter your age2
+3
+Enter your age4
+Enter your age5
+Enter your age7
+Enter your age17
+Enter your age20
                             
 
 
