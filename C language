@@ -297,20 +297,115 @@ int main()
 	}              
 	
 }
-OUTPUT:
-Enter your age2
+OUTPUT:                       NOTE 2: Jis bhi loop ke andar ho bas waha se bahar aaoge if you use break.. In case you are using a nested loop then you won't come out 
+Enter your age2                       of the other loop where break is not used.
 3
 Enter your age4
 Enter your age5
 Enter your age7
 Enter your age17
 Enter your age20
-                            
 
+CONTINUE STATEMENT USING LOOP:
+The continue statement skips some code inside the loop and continues with the next iteration. It is mainly used for a condition so that we can skip some lines of code
+for a particular condition. Break statement will skip the whole loop but continue will skip a particular iteration.
+#include<stdio.h>
+int main()
+{
+	int i, age;
+	for(i=0; i<10; i++) {
+		printf("Enter your age\n", i);
+		scanf("%d\n", &age);
+		if(age>10) {
+			continue;
+		}
+		printf("We have not come across any continue statement\n");
+	}
+	return 0;
+}
+OUTPUT: Enter your age
+4
+4
+We have not come across any continue statement
+Enter your age
+5
+We have not come across any continue statement
+Enter your age
+17
+We have not come across any continue statement
+Enter your age
+17
+Enter your age
+11
+Enter your age
 
+CONVERSION OF KG IN G
+#include<stdio.h>                                     #include<stdio.h>
+#include<conio.h>                                     int main()
+int main()                                            {                                     
+{                                                          float kg, g;
+	float kg, g;                                       printf("Enter a weight");
+	printf("Enter a weight");                          scanf("%f", &kg);                        
+	scanf("%f", &kg);                                  g=kg * 1000;
+	g=kg * 1000;                                       printf("The value of g is %f", g);
+	printf("Weight in grams is %f\n", g);              return 0;             
+	getch();                                     }
+	return 0;
+}
 
-
+OUTPUT: Enter a weight 4
+        The value of g is 4000.000
 	
+PRINT EVEN NUMBERS BETWEEN 1-100:
+#include<stdio.h>
+int main()
+{
+	int i;
+	printf("Even numbers between 1-100");
+	for(i=0; i<=100; i++){
+		if(i%2==0) {
+			printf("%d\n", i);
+		}
+	}
+	return 0;
+}
+NOTE: goto statement is not preferable for programmers.
+
+TYPECASTING: Converting one datatype into another datatype.
+#include<stdio.h>
+int main()                                                 OUTPUT:The value of a is 10.800000
+{
+	float a= (float)54/5;
+	printf("The value of a is %f", a);
+	return 0;
+}
+NOTE: If we had just written float a = 54/5 it would give an answer as 10.00000 because 54 and 4 are both integers so we changed their datatype using typecasting.
+
+#include<stdio.h>
+int main()
+{
+	float a= (int)17.44;
+	printf("The value of a is %f", a);  OUTPUT: The value of a is 17.000000
+	return 0;
+}
+
+DECLARING, DEFINING AND CALLING THE FUNCTION: 1) WITH ARGUMENTS AND WITH RETURN VALUES
+#include<stdio.h>                                                     #include<stdio.h>
+int sum (int a, int b) {                                              int sum(int a, int b);  HERE WE DECLARED THE FUNCTION TO THE COMPILER
+		return a+b;                                           int main()
+	}                                                             {
+int main()                                                               int a,b,c;  
+{                                                                        a=17;
+	                                                                 b=4;
+	int a,b,c;               OUTPUT: The sum is 21                   c= sum(a,b);
+	a=17;                                                            printf("The sum is %d", c);
+	b=4;                                                             return 0;
+	c= sum(a,b);                                                  }
+	printf("The sum is %d", c);                                   int sum (int a, int b) {      AND CALLED IT LATER              
+	return 0;                                                     return a+b;
+}                                                                     }
+	
+2) WITH ARGUMENTS AND WITHOUT RETURN VALUES:
 
 	
 	
