@@ -353,24 +353,24 @@ int main()                                            {
 	return 0;
 }
 
-OUTPUT: Enter a weight 4
-        The value of g is 4000.000
-	
-PRINT EVEN NUMBERS BETWEEN 1-100:
-#include<stdio.h>
-int main()
-{
-	int i;
-	printf("Even numbers between 1-100");
-	for(i=0; i<=100; i++){
-		if(i%2==0) {
-			printf("%d\n", i);
-		}
-	}
-	return 0;
+OUTPUT: Enter a weight 4                                         JUST: Even and odd numbers.
+        The value of g is 4000.000                                    #include<stdio.h>
+	                                                              int main()
+PRINT EVEN NUMBERS BETWEEN 1-100:                                     {                                     
+#include<stdio.h>                                                           int a;
+int main()                                                                  printf("Enter the number");                                                        
+{                                                                           scanf("%d", &a);
+	int i;                                                              if(a%2==0) {
+	printf("Even numbers between 1-100");                                    printf("This is even number");
+	for(i=0; i<=100; i++){                                              }
+		if(i%2==0) {                                                else {
+			printf("%d\n", i);                                     printf("This is odd number");
+		}                                                       }
+	}                                                               return 0;
+	return 0;                                                    }
 }
-NOTE: goto statement is not preferable for programmers.
-
+NOTE: goto statement is not preferable for programmers.                OUTPUT: Enter the numbe 8
+                                                                               This is even number
 TYPECASTING: Converting one datatype into another datatype.
 #include<stdio.h>
 int main()                                                 OUTPUT:The value of a is 10.800000
