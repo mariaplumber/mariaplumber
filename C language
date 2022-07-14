@@ -405,7 +405,62 @@ int main()                                                               int a,b
 	return 0;                                                     return a+b;
 }                                                                     }
 	
-2) WITH ARGUMENTS AND WITHOUT RETURN VALUES:
+#include<stdio.h>
+int difference(int a, int b){
+	return a-b;
+}
+int main()
+{
+	int a,b,c;
+	printf("Enter the value of a");            OUTPUT: Enter the value of a 17
+	scanf("%d", &a);                                   Enter the value of b 4
+	printf("Enter the value of b");                    The difference is 13
+	scanf("%d", &b);
+	c=difference(a,b);
+	printf("The difference is %d", c);
+	return 0;
+	
+}
+
+2) WITH ARGUMENT WITHOUT RETURN VALUE:
+## WRONG PROGRAM ##
+#include<stdio.h>
+void printstar(int n) {           Output: 42
+	printf("%d", '*');
+}
+int main() {
+	printstar(3);
+}
+
+## CORRECT ##
+#include<stdio.h>
+void printstar(int n) 
+{                                          OUTPUT: *******
+	for(int i=0; i<n; i++)
+	 {
+		printf("%c", '*');
+	}
+}
+int main() {
+	printstar(7);
+}
+
+3) WITHOUT ARGUMENT WITH RETURN VALUE:
+#include<stdio.h>
+int takenumber() {
+	int i;
+	printf("Enter a number");            OUTPUT: Enter a number 17
+	scanf("%d", &i);                             The entered number is 17
+	return i;           //return value                     
+}
+int main()
+{
+	int c;
+	c = takenumber();
+	printf("The entered number is %d", c);      NOTE: Here we had to take a variable c because here we had a return value.
+	return 0;
+}
+
 
 	
 	
