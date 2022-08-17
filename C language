@@ -493,6 +493,66 @@ int main()
 	return 0;
 }
 
+ARRAY:
+#include<stdio.h>
+int main()
+{
+	int marks[4];  //we can store marks of 4 students     OUTPUT: Marks of student 1 is 96
+	marks[0] =96;
+	printf("Marks of student 1 is %d", marks[0]);
+
+}
+
+2)
+#include<stdio.h>
+int main()
+{
+	int marks[4];
+	marks[0]=96;                               OUTPUT:  Marks of student 2 is 86
+	marks[1]=86;
+	marks[2]=76;
+	marks[3]=76;
+	printf("Marks of student 2 is %d", marks[1]);
+	return 0;
+}
+
+3)
+#include<stdio.h>
+int main()
+{                                                                    OUTPUT: Enter the marks for 0 index of array 96
+	int i;                                                               Enter the marks for 1 index of array 86
+	int marks[4];                                                        Enter the marks for 2 index of array 76
+	for(i=0; i<4; i++) {                                                 Enter the marks for 3 index of array 66
+	printf("Enter the marks for %d index of array", i);  //The %d was written here to get the 0 1 2 3 numbers in the output 
+	scanf("%d", &marks[i]);
+}
+}  NOTE: This was done to initialize each element of the array and after the 3rd index, it exitted the loop because marks[4].
+
+4)
+#include<stdio.h>
+int main()
+{
+	int i;
+	int marks[4];
+	for (i=0; i<4; i++) {
+		printf("Enter the  value of %d index of array", i);
+		scanf("%d", &marks[i]);
+	} 
+	for (i=0; i<4; i++) {
+		printf("The value of %d index of array is %d\n", i, marks[i]);
+		}
+
+}
+NOTE: This initialized as well as printed the indices of the array
+Enter the  value of 0 index of array40     : OUTPUT
+Enter the  value of 1 index of array17
+Enter the  value of 2 index of array47
+Enter the  value of 3 index of array417
+The value of 0 index of array is 40
+The value of 1 index of array is 17
+The value of 2 index of array is 47
+The value of 3 index of array is 417
+
 
 	
 	
