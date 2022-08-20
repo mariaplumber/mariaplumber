@@ -3,27 +3,94 @@ print("Hello World")    OUTPUT: Hello World
 msg = "Maria Plumber"   OUTPUT: Maria Plumber
 print(msg)
 
-from re import X
-
-
 x=10
 y=20
 x,y = y,x  OUTPUT: 20
 print(x)
 
 x=10
-pritn("Hello" + x)  OUTPUT: ERROR
+print("Hello" + x)  OUTPUT: ERROR
 
 x=10
-print("Hello" , x)  Hello 10
+print("Hello" , x) OUTPUT: Hello 10
 
 x=10
-print("Hello" , "x")  Hello x
+print("Hello" , "x") OUTPUT: Hello x
+
+x=10
+print("Hello" , str(x))  OUTPUT: Hello 10
 
 x=10
 y=10
 print(id(x))   OUTPUT: 2170489104976
 print(id(y))           2170489104976
+# is used for a single line comment and """ or ''' is used for multi line comment.
+
+print("Hello world", end=" ") 
+print("Hello Maria") #It will put both the sentence in one line  OUTPUT: Hello world Hello Maria
+
+NOTE: If we want to include ' or " in a string then it will throw error. So to do that we need to use \" or \' to print it
+print("C:\"MARIA")   OUTPUT: C:"MARIA
+Also \n acts as a new line character so to include \n in a string, use \\n. \t gives new tab. These are called Esacape sequences.
+
+var1= "Hello Maria "
+var2= 10
+var3= 17.4
+var4= "Hii"
+print(type(var1))       OUTPUT: <class 'str'>
+print(type(var2))               <class 'int'>
+print(type(var3))               <class 'float'>
+print(var3 + var2)              27.4
+print(var1 + var4)              Hello Maria Hii   NOTE: var1 + var2 will give error
+
+var1= "17"
+var2= "4"
+print(var1 + var2)
+print(int(var1) + int(var2)) #typecasting where changing the datatype of the variables
+OUTPUT: 174
+        21
+NOTE: print(10 * "Hello Worrld") will print Hello World 10 times
+BUT print(100* int(var1) + int(var2)) will give output 1704 (100*17 + 4)
+print(100 * str(int(var1) + int(var2)) will print 21 100 times because it will convert the addition of vars into string and then print it 100 times
+
+print("Enter a number")
+inpnum= input()         NOTE: Here inpnum will take input as STRING and not as INT
+print("You entered ", inpnum) 
+OUTPUT: Enter a number
+17
+You entered  17
+
+print("Enter a number")
+inpnum= input()
+print("You entered ", inpnum + 4)
+OUTPUT: It will show error because it took inpnum as string and we cannot add or concatenate a string and an integer
+        TypeError: can only concatenate str (not "int") to str
+
+print("Enter a number")
+inpnum= input()
+print("You entered ", int(inpnum) + 4)
+OUTPUT: Enter a number
+17
+You entered  21
+
+ADDITION OF TWO NUMBERS TAKING INPUT FROM THE USER
+
+print("Enter a number 1")
+num1= input()
+print("Enter a number 2")
+num2= input()
+print("The addition of two numbers is ", int(num1) + int(num2) )
+
+Enter a number 1
+17                 
+Enter a number 2         :OUTPUT
+4
+The addition of two numbers is  21
+NOTE: If we would directly write num1 + num2 without converting it into int, it would give 174 as output by concatenating those strings
+
+
+
+
 
 
 
