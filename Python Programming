@@ -1,0 +1,30 @@
+print("Hello World")    OUTPUT: Hello World
+
+msg = "Maria Plumber"   OUTPUT: Maria Plumber
+print(msg)
+
+from re import X
+
+
+x=10
+y=20
+x,y = y,x  OUTPUT: 20
+print(x)
+
+x=10
+pritn("Hello" + x)  OUTPUT: ERROR
+
+x=10
+print("Hello" , x)  Hello 10
+
+x=10
+print("Hello" , "x")  Hello x
+
+x=10
+y=10
+print(id(x))   OUTPUT: 2170489104976
+print(id(y))           2170489104976
+
+
+
+
