@@ -88,6 +88,47 @@ Enter a number 2         :OUTPUT
 The addition of two numbers is  21
 NOTE: If we would directly write num1 + num2 without converting it into int, it would give 174 as output by concatenating those strings
 
+x= int(input("Enter avalue"))
+if x>=0:
+    if x==0:
+        print("Value is zero")
+        else:
+            print("Value is positive")
+elif x==0:
+    print("Value is positive")
+else:
+    print("Value is negative")
+print("After if")
+
+x=[10,20,30,40,50,60,70]
+
+print("list element access")
+for elm in x:
+    print(elm)
+
+print("list index access")
+for i in range(len(x)):
+    print("value of index: ", i," is ", x[i])
+
+print("for loop with range")
+for i in range(11, 1, -2):
+    print(i)
+
+for i in range(8, 1, -1):
+    print(" " + (" * " * i))
+  *  *  *  *  *  *  *  * 
+  *  *  *  *  *  *  * 
+  *  *  *  *  *  *
+  *  *  *  *  *
+  *  *  *  *
+  *  *  *
+  *  *   
+  
+  
+
+
+
+
 
 
 
