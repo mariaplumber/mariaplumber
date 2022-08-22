@@ -127,7 +127,7 @@ for i in range(11,1,-2):
 
 
 for i in range(8, 0, -1):  #FOR 8 TO 1
-    print(" " + (" * " * i))
+    print(" " + (" * " * i))      OR  print(" * " * i)
   *  *  *  *  *  *  *  * 
   *  *  *  *  *  *  * 
   *  *  *  *  *  *
