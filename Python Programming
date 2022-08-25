@@ -129,7 +129,7 @@ for i in range(11,1,-2):
 for i in range(8, 0, -1):  #FOR 8 TO 1
     print(" " + (" * " * i))      OR  print(" * " * i)
   *  *  *  *  *  *  *  * 
-  *  *  *  *  *  *  * 
+  *  *  *  *  *  *  *             
   *  *  *  *  *  *
   *  *  *  *  *
   *  *  *  *
@@ -137,9 +137,21 @@ for i in range(8, 0, -1):  #FOR 8 TO 1
   *  * 
   *
   
+for i in range(1, 8):
+    print(" * " * i) #for 1 to 8
+ * 
+ *  * 
+ *  *  *
+ *  *  *  *
+ *  *  *  *  *
+ *  *  *  *  *  *
+ *  *  *  *  *  *  *
+ *  *  *  *  *  *  *  *  
+    
+  
   for i in range(8, 0, -1):
     print(" " + (" * " * (8-i) + " * " *i))
- *  *  *  *  *  *  *  * 
+  *  *  *  *  *  *  *  * 
   *  *  *  *  *  *  *  * 
   *  *  *  *  *  *  *  *
   *  *  *  *  *  *  *  *
@@ -147,6 +159,16 @@ for i in range(8, 0, -1):  #FOR 8 TO 1
   *  *  *  *  *  *  *  *
   *  *  *  *  *  *  *  *
   *  *  *  *  *  *  *  *
+  
+  for i in range(8, 0, -1):
+    print(" * " * (8+i))
+ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *    Here according to i it will star with 8 *s and end with 1 * but then we put (8+i) which means it will print i with 
+ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *       +8 i.e in the 1st line it printed 8 * i.e the 8+ part of 8+i and then it printed i that is the beginning 8 *s of i.
+ *  *  *  *  *  *  *  *  *  *  *  *  *  *          Thus it printed 16 stars in the first line. Then according to i it will reduce 1 1 star in each row plus it will print 
+ *  *  *  *  *  *  *  *  *  *  *  *                8 stars as usual of 8+ part of 8+i. Thus it will print 15 stars. Similarly in the last line it printed 8 + 1 star
+ *  *  *  *  *  *  *  *  *  *  *                   thus printing 9 stars.
+ *  *  *  *  *  *  *  *  *  *            OR Maybe it has done 
+ *  *  *  *  *  *  *  *  *
   
   for i in range(8, 0, -1):
     print(" "  *(8-i) + " * " *i)
