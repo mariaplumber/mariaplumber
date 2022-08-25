@@ -137,12 +137,12 @@ for i in range(8, 0, -1):  #FOR 8 TO 1
   *  * 
   *
   
-for i in range(1, 8):
-    print(" * " * i) #for 1 to 8
- * 
- *  * 
- *  *  *
- *  *  *  *
+for i in range(1, 8):                     OR   for i in range(8, 0, -1):     OR   for i in range(8, 0, -1):
+    print(" * " * i) #for 1 to 8                   print(" * " *(8-i))                print(" * " *(9-i))
+ *                                            Here it will start with 0 * at         Here it will directly start with 1* and will print the same pattern.
+ *  *                                         the top and then 1 * then 2 * and      9-0=1 so start with 1 star
+ *  *  *                                      so on till 8 stars because 8-8=0
+ *  *  *  *                                   so empty space
  *  *  *  *  *
  *  *  *  *  *  *
  *  *  *  *  *  *  *
@@ -167,9 +167,9 @@ for i in range(1, 8):
  *  *  *  *  *  *  *  *  *  *  *  *  *  *          Thus it printed 16 stars in the first line. Then according to i it will reduce 1 1 star in each row plus it will print 
  *  *  *  *  *  *  *  *  *  *  *  *                8 stars as usual of 8+ part of 8+i. Thus it will print 15 stars. Similarly in the last line it printed 8 + 1 star
  *  *  *  *  *  *  *  *  *  *  *                   thus printing 9 stars.
- *  *  *  *  *  *  *  *  *  *            OR Maybe it has done 
- *  *  *  *  *  *  *  *  *
-  
+ *  *  *  *  *  *  *  *  *  *            
+ *  *  *  *  *  *  *  *  *                 ALSO, 8-i can also be considered as reverse of whatever the condition of i is. Here it should start with 8 and end in 1 so 
+                                                 8-i will be start with 0 and end in 8. In the below pattern, space is given in the 8-i manner.
   for i in range(8, 0, -1):
     print(" "  *(8-i) + " * " *i)
 *  *  *  *  *  *  *  * 
