@@ -115,8 +115,6 @@ print(msg.lower())                                                              
 print(msg.upper())                                                                    MARIA IS A GOOD GIRL
  
 
-
-           
 ## IF ELSE ELIF STATEMENTS:
 x= int(input("Enter avalue"))
 if x>=0:
