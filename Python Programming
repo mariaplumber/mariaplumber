@@ -365,7 +365,61 @@ while n!=9:
   * * * * * *
  * * * * * * *
 * * * * * * * *
-  
+
+USING LOOPS IN LIST THERE ARE TWO WAYS:
+for i in range(len(l)):
+    print("i :", l[i])
+i : 76
+i : 54
+i : 87
+i : 9
+i : 32
+i : 54
+i : 47
+i : 21
+
+for elm in l:
+    print(elm)
+76
+54
+87
+9
+32
+54
+47
+21
+
+l1=2
+l2=1
+l3=9
+if (l1<l2):
+    print("Min value is l1")
+elif(l2<l3):
+    print("Min value is l2")
+else:
+    print("Min value is l3")
+    
+OUTPUT: Min value is l2
+
+l = [1,2,3,4]
+for i in range(len(l)-1):
+    if(l[i]<l[i+1]):
+        print("Min value is ", l[i])
+    else:
+        print("Min value is", l[i+1])
+Min value is  1
+Min value is  2
+Min value is  3
+
+l1 = [54,76,32,98,1,43,67,45]
+minv=l1[0]
+for elm in l1:
+    if(elm<minv):   NOTE: If elm>minv it will give max value
+        minv=elm
+print(minv)
+OUTPUT: 1
+
+PROBLEM: Find the second largest value or the second smallest value
 
 
 
