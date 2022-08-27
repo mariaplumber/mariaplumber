@@ -336,6 +336,35 @@ Add to a string: c
 Add to a string: d
  abcd
 Add to a string: q
+
+n=8
+flag=0
+while n!=9:
+    if(n==0):
+        flag=1
+    if(flag==0):
+        print(" " * (8-n) + "* " *n)
+        n-=1
+    elif n<8 and flag==1:
+        n+=1
+        print(" " * (8-n) + "* " *n)
+        
+* * * * * * * * 
+ * * * * * * * 
+  * * * * * *
+   * * * * *
+    * * * *
+     * * *
+      * *
+       *
+       *
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+ * * * * * * *
+* * * * * * * *
   
 
 
