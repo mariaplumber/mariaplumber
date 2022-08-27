@@ -88,6 +88,36 @@ Enter a number 2         :OUTPUT
 The addition of two numbers is  21
 NOTE: If we would directly write num1 + num2 without converting it into int, it would give 174 as output by concatenating those strings
 
+##SLICING OF STRING 
+msg = "Maria is a good girl"                                            
+print(msg [0:4]) #Here 0 is included and 4 is excluded                        OUTPUT: Mari
+print(len(msg))  #len is 20 but index will start from 0 and at at 19                  20
+print(msg [0:20]) #20 will be excluded so it will print from index 1 to 19            Maria is a good girl
+print(msg[17])                                                                        i
+print(msg[78])                                                                        ##ERROR
+print(msg [0:78]) #Jitna hoga itna print kar dega                                     Maria is a good girl
+print(msg [0:20:2]) #ek ek skip karega as in 0 2 4 6 print karega                     Mrai  odgr
+print(msg [0:])  #puri length le lega                                                 Maria is a good girl
+print(msg [:5])  #beginning 0 le lega                                                 Maria
+print(msg [::])  #0, full string and spacing 1 maan lega                              Maria is a good girl
+print(msg [::3])                                                                      Miiao r
+print(msg [::559])                                                                    M
+print(msg [::-1]) #reverse the string                                                 lrig doog a si airaM
+print(msg [-8:-2]) #l -1, r -2, i -3, g -4, space -5, d -6...                         ood gi
+print(msg.isalnum()) #yaha pe spaces nikaldo to it will become alphanumeric           False
+print(msg.isalpha()) #same as above                                                   False
+print(msg.endswith("girl"))                                                           True
+print(msg.endswith("gdirl"))                                                          False
+print(msg.count("g"))                                                                 2
+print(msg.capitalize()) #if stringstarts with a small letter it capitalize it         Maria is a good girl
+print(msg.find("is"))                                                                 6
+print(msg.lower())                                                                    maria is a good girl
+print(msg.upper())                                                                    MARIA IS A GOOD GIRL
+ 
+
+
+           
+## IF ELSE ELIF STATEMENTS:
 x= int(input("Enter avalue"))
 if x>=0:
     if x==0:
