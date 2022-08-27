@@ -290,6 +290,24 @@ Enter a number: 6
 Enter a number: 1
 Enter a number: q
 q
+
+num_string =" "
+while 1:
+    num =input("Add to a string: ")
+    if num == "q":
+        break
+    num_string += num
+    print(num_string)
+
+Add to a string: a
+ a
+Add to a string: b
+ ab
+Add to a string: c
+ abc
+Add to a string: d
+ abcd
+Add to a string: q
   
 
 
