@@ -421,6 +421,22 @@ OUTPUT: 1
 
 PROBLEM: Find the second largest value or the second smallest value
 
+l1 = [54,76,32,98,1,43,67,45]
+minv=l1[0]
+minvs=l1[1]
+for elm in l1:
+    if(elm<minvs):
+        if(elm<minv):
+            if(minv<minvs):
+                minvs=elm
+print(minvs)
+OUTPUT:32
+        
+
+        
+
+        
+
 
 
 
