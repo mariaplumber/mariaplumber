@@ -421,8 +421,8 @@ OUTPUT: 1
 
 PROBLEM: Find the second largest value or the second smallest value
 
-l1 = [54,76,32,98,1,43,67,45]
-minv=l1[0]
+l1 = [54,76,32,98,1,43,67,45]        l1 = [54,76,32,98,1,43,22,45]
+minv=l1[0]                           OUTPUT: Still comes 32 so wrong program
 minvs=l1[1]
 for elm in l1:
     if(elm<minvs):
@@ -431,6 +431,70 @@ for elm in l1:
                 minvs=elm
 print(minvs)
 OUTPUT:32
+        
+        
+
+l1 = [54,76,32,98,1,43,22,45]
+minv=l1[0]
+minvs=l1[1]
+for elm in l1:
+    if(elm<minv):
+        if(elm<minvs):
+            if(minv<minvs):
+                print("")
+     elif(minvs>elm and minvs!=minv):
+        minvs=elm
+        
+print(minvs)
+###
+print("Enter q to terminate")
+val=input("Enter a number")
+sumv=0
+while val!="q":
+    sumv+=int(val)
+    val=input("Enter a number")
+print(sumv)
+
+Enter q to terminate
+Enter a number1
+Enter a number1
+Enter a number1
+Enter a numberq
+3
+
+val= int(input("enter a value"))
+sumv=0
+count=0
+while val!=0:
+    rem = val%10
+    print("rem=" , rem)
+    sumv+=(rem)
+    print("sumv=", sumv)
+    val//=10
+    print("val=", val)
+    count+=1
+print("digits=", count)
+print("sum=", sumv)
+
+enter a value2345     OUTPUT
+rem= 5
+sumv= 5
+val= 234
+rem= 4
+sumv= 9
+val= 23
+rem= 3
+sumv= 12
+val= 2
+rem= 2
+sumv= 14
+val= 0
+digits= 4
+sum= 14
+        
+
+        
+
         
 
         
