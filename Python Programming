@@ -328,6 +328,35 @@ for j in range(8,0,-1):
        *
   Problem: Solve this with 1 loop
   
+  ###KITE
+  for i in range(1,9):
+    print(" " * (8-i) + ("* " * i))
+for j in range(8,0,-1):
+    print(" " * (8-j) + ("* " * j))
+for k in range(2,5):
+    print(" " * (8-k) + ("* " * k))
+    
+       * 
+      * * 
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+ * * * * * * *
+* * * * * * * *
+* * * * * * * *
+ * * * * * * *
+  * * * * * *
+   * * * * *
+    * * * *
+     * * *
+      * *
+       *
+      * *
+     * * *
+    * * * *
+  
+  
  ##QUESTION                                       ##CORRECT
  while True:                                     while True:
     num = input("Enter a number: ")                 num = input("Enter a number: ")
