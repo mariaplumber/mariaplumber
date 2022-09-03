@@ -182,6 +182,16 @@ print(id(b))                2009880881136        because memory locations are se
 print(a==b)                 True
 print(a is b)               True
 
+for i in range(1,8):
+    print(" " * (8-i)+ "*" * i)
+       *
+      **
+     ***
+    ****
+   *****
+  ******
+ *******
+
 
 
 
@@ -558,11 +568,13 @@ something
 out of for
 
 sum=0
+
+####
 while True:
     val= input("Enter a value")
     if val=="q":
         break
-    elif not val.isdigit():
+    elif not val.isdigit():   #or !val.isdigit():
         print("Enter a proper value")
         continue
     sum+=int(val)
