@@ -318,13 +318,13 @@ for j in range(8,0,-1):
        *
   Problem: Solve this with 1 loop
   
- ##QUESTION                              
+ ##QUESTION                                       ##CORRECT
  while True:                                     while True:
     num = input("Enter a number: ")                 num = input("Enter a number: ")
     if num=="q":                                    if num=="q":
-        break                                           answer= sum(num)
-print(num)                                              print(answer)
-Enter a number: 4   OUTPUT
+        break                                           break
+print(num)                                          sum+=int(val)   
+Enter a number: 4   OUTPUT                          print(sum)
 Enter a number: 3
 Enter a number: 5
 Enter a number: 6
@@ -556,6 +556,31 @@ something
 something
 5
 out of for
+
+sum=0
+while True:
+    val= input("Enter a value")
+    if val=="q":
+        break
+    elif not val.isdigit():
+        print("Enter a proper value")
+        continue
+    sum+=int(val)
+print(sum)
+
+Enter a value1
+Enter a value2
+Enter a value3
+Enter a valuea
+Enter a proper value
+Enter a valueq
+6
+
+    
+
+
+
+
         
 
         
