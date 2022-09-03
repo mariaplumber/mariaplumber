@@ -634,6 +634,36 @@ Enter a proper value
 Enter a valueq
 6
 
+n=1
+flag=True
+while n!=0:
+    if(n==4):
+        print("*   "*n)
+        flag=False
+        n-=1
+    if(flag):
+        print("*   "*n)
+        print("  "+"*   "*n)
+        n+=1
+    else:
+        print("  "+"*   "*n)
+        print("*   "*n)
+        n-=1
+        
+*   
+  *   
+*   *
+  *   *
+*   *   *
+  *   *   *
+*   *   *   *
+  *   *   *
+*   *   *
+  *   *
+*   *
+  *
+*
+
     
 
 
