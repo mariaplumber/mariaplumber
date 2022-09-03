@@ -537,6 +537,25 @@ val= 0
 digits= 5
 sum= 54321
 
+for i in range(10):
+    print(i)
+    if(i==3):  #here it will skip this iteration and won't print something
+        continue
+    if(i==5):
+        break #here it will jump out of the loop and won;t print something
+    print("something") 
+print("out of for")
+0
+something
+1
+something
+2
+something
+3
+4
+something
+5
+out of for
         
 
         
