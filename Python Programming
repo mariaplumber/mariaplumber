@@ -504,8 +504,38 @@ sumv= 14
 val= 0
 digits= 4
 sum= 14
-          
-        
+##REVERSE THE NUMBER        
+val= int(input("enter a value"))
+sum=0
+count=0
+while val!=0:
+    rem = val%10
+    print("rem=" , rem)
+    sum=(sum*10)+(rem)  #starting form (0*10)+(1)
+    print("sum=", sum)
+    val//=10
+    print("val=", val)
+    count+=1
+print("digits=", count)
+print("sum=", sum)
+
+rem= 5   OUTPUT
+sum= 5
+val= 1234
+rem= 4
+sum= 54
+val= 123
+rem= 3
+sum= 543
+val= 12
+rem= 2
+sum= 5432
+val= 1
+rem= 1
+sum= 54321
+val= 0
+digits= 5
+sum= 54321
 
         
 
