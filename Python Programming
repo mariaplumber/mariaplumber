@@ -710,6 +710,34 @@ l.remove(max(l))
 print(max(l))
 
 
+l=[3,6,8,23,45,23,65,80,65]
+n=[]
+for elm in l:
+    if l.count(elm)>1:
+        n.append(elm)
+print(n)
+
+[23,23,65,65]
+
+l=[3,6,8,23,45,23,65,80,65]
+n=[]
+for elm in l:
+    if (l.count(elm)>1 and (elm not in n)):            OR  count=l.count(elm)
+        n.append(elm)                                      if (count>1 and (elm not in n)):  
+print(n)
+
+[23,65]
+
+l=[3,6,8,23,45,23,65,80,65]
+n=[]
+for elm in l:
+    count=l.count(elm)
+    if (count>1 and (elm not in n)):
+        index[]
+        for i in range(count):
+            n.append(elm)
+
+print(n)
 
 
     
