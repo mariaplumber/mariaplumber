@@ -736,8 +736,42 @@ for elm in l:
         index[]
         for i in range(count):
             n.append(elm)
+print(n)
+ROUGH
+n=[]
+for elm in l:
+    count=l.count(elm)
+    if (count>1 and (elm not in n)):
+        ind= l.index(elm)
+        n.append(ind)
+print(n)
 
 print(n)
+n=[]
+for i in range(len(l)):
+    print(l[i])
+    n.append(i)
+print(n)
+
+MAIN
+
+l=[3,6,8,23,45,23,65,80,65,120,23]
+ans=[]
+for elm in l:
+    count=l.count(elm)
+    if(count>1 and (elm not in ans)):
+        ans.append(elm)
+        indexList=[]
+        for i in range(len(l)):
+            if elm==l[i]:
+                indexList.append(i)
+        print(elm)
+        print(indexList)
+        
+23
+[3, 5, 10]
+65
+[6, 8]
 
 
     
