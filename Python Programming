@@ -166,6 +166,15 @@ print("This will print the multiplication table of 2")
 
 OUTPUT: 2 4 6 8 10 12 14 16 18 20  (in separate lines)
         This will print the multiplication table of 2
+        
+WHILE LOOP WITH ELSE
+a=1
+while a<=10:
+    print(a)
+    a+=1
+else:
+    print("While part was false so it came onto the the else")
+print("Other part of the code")
 
 ##FOR LOOP
 
