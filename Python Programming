@@ -73,6 +73,13 @@ OUTPUT: Enter a number
 17
 You entered  21
 
+SWAPPING OF TWO NUMBERS
+a=3
+b=4
+a,b = b,a 
+print(a,b)
+OUTPUT: 4 3
+
 ADDITION OF TWO NUMBERS TAKING INPUT FROM THE USER
 
 print("Enter a number 1")
@@ -667,6 +674,7 @@ while n!=0:
 l= [1,4,2,8,7,5,19]
 print(min(l))
 print(max(l))
+print(len(l))   #length of the list
 l[0]=20
 print(l)
 l.append(45)  #puts at last index  as an element [1,4,2,8,7,5,19,45] Append can add only a single element in the list individually
@@ -710,7 +718,18 @@ print(l)              [39,10,1,4,2,8,7,5,19]
 l[0]=39              
 print(l)              #same as above
 
+l=[1,2,3,4,5,6,7,8,9]
+n=l.copy()
+m=n
+m[0]=20
+print(m)
+print(n)
+print(l)
 
+OUTPUT: [20, 2, 3, 4, 5, 6, 7, 8, 9]
+        [20, 2, 3, 4, 5, 6, 7, 8, 9]
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
 l=[3,6,8,23,45,23,65,80,65]
 #maxv=max(l)
 #l.pop(l.index(maxv))
