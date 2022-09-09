@@ -669,16 +669,18 @@ print(min(l))
 print(max(l))
 l[0]=20
 print(l)
-l.append(45)  #puts at index 0
+l.append(45)  #puts at last index  as an element [1,4,2,8,7,5,19,45] Append can add only a single element in the list individually
 print(l)
-l.extend([2])  #puts at last
-print(l)
-l.append([[1,2,3,4]])  #puts this whole list at index  0
+l.extend([2])  #puts at last as just an element [1,4,2,8,7,5,19,2]    Extend can add multiple elements in the list individuallly
+print(l) 
+l.append([1,2,3,4])  #puts this whole list at last index of main list
 print(l)
 l.extend([[1,2,3,4]]) #puts this whole list at last index of the main list
 print(l)
-l+=[6,7,8]   #acts as append
+l+=[6,7,8]   #acts as extend
 print(l)
+l.insert(2,41)  #inserts 41 at index 2 
+print(l)  
 l.pop(0)
 print(l)
 l.pop(2)  #will remove the element at index 2
@@ -688,6 +690,8 @@ print(l)
 l.sort()     #sorts the list
 print(l)
 l.count(2) #counts numbers of 2 
+print(l)
+l[5]=6          [1,4,2,8,7,6,19]  
 print(l)
 m=l         #this is small L         
 print(m)      OUTPUT: [1,4,2,8,7,5,19]
@@ -776,6 +780,8 @@ for elm in l:
 [3, 5, 10]
 65
 [6, 8]
+
+
 
 
     
