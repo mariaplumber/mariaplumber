@@ -819,6 +819,20 @@ for elm in l:
 65
 [6, 8]
 
+##UNION OF NO COMMON ELEMNTS OF LIST
+l= [1,2,3,4,7,8]
+m= [2,3,4,5,6,9]
+n= []
+for elm in l:
+    if (elm in l) and (elm not in m):
+        n.append(elm)
+for elm in m:
+    if (elm in m) and (elm not in l):
+        n.append(elm)
+print(n)
+OUTPUT: [1, 7, 8, 5, 6, 9]
+
+
 
 
 
