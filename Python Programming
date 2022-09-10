@@ -865,6 +865,91 @@ for elm in m:
 print(n)
 OUTPUT: [1, 7, 8, 5, 6, 9]
 
+##FUNCTIONS
+
+x=0
+y=10
+def values():
+    print(x)  #it doesnt have it"s own local variable declared inside so it will go out and search for the global variable so 0
+    y=20
+    print(y)
+
+print(x)
+print(y)
+
+values()
+
+print(x)
+print(y)
+
+x=30
+print(x)
+print(y)
+values()
+
+0
+10
+0
+20
+0
+10
+30
+10
+30
+20
+
+##
+x=0
+y=10
+z=100
+def values():
+    y=20
+    global z
+    z=200
+    print(x)
+    print(y)
+    print(z)
+ print(x)
+ print(y)
+ print(z)
+
+ values()
+ print(x)
+ print(y)
+ print(z) 
+
+ x=10
+ y=40
+ z=200
+ print(x)
+ print(y)
+ print(z)  
+
+ values()
+ print(x)
+ print(y)
+ print(z)
+ 
+ ##
+ def args(name, sname, std, div)
+args("Maria", "Plumber", "3", "5B1" )
+def args(sname="Plumbr", name="Maria")
+def args(name, sname, msg="Good")
+def args(*name)
+
+##
+def summin(a,b):
+    return a+b, a-b
+x= summin(30,10)
+y,z=summin(40,20)
+print(x)
+print(y)
+print(z)
+
+(40, 20)
+60
+20
+
 
 
 
