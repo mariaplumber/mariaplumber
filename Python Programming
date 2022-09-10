@@ -689,7 +689,7 @@ while n!=0:
 *   *
   *
 *
-
+##
 l= [1,4,2,8,7,5,19]
 print(min(l))
 print(max(l))
@@ -748,14 +748,14 @@ print(l)
 OUTPUT: [20, 2, 3, 4, 5, 6, 7, 8, 9]
         [20, 2, 3, 4, 5, 6, 7, 8, 9]
         [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        
+##       
 l=[3,6,8,23,45,23,65,80,65]
 #maxv=max(l)
 #l.pop(l.index(maxv))
 l.remove(max(l))
 print(max(l))
 
-
+##
 l=[3,6,8,23,45,23,65,80,65]
 n=[]
 for elm in l:
@@ -765,6 +765,7 @@ print(n)
 
 [23,23,65,65]
 
+##
 l=[3,6,8,23,45,23,65,80,65]
 n=[]
 for elm in l:
@@ -774,6 +775,7 @@ print(n)
 
 [23,65]
 
+##
 l=[3,6,8,23,45,23,65,80,65]
 n=[]
 for elm in l:
@@ -783,7 +785,8 @@ for elm in l:
         for i in range(count):
             n.append(elm)
 print(n)
-ROUGH
+
+##ROUGH
 n=[]
 for elm in l:
     count=l.count(elm)
@@ -792,15 +795,30 @@ for elm in l:
         n.append(ind)
 print(n)
 
+##
+l=[3,6,8,23,45,23,65,80,65]
+n=[]
+for i in range(len(l)):
+     n.append(l[i])
 print(n)
+OUTPUT: [3, 6, 8, 23, 45, 23, 65, 80, 65]
+
+##
+l=[3,6,8,23,45,23,65,80,65]
+n=[]
+for i in range(len(l)):
+     n.append(i)
+print(n)
+OUTPUT: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+##
 n=[]
 for i in range(len(l)):
     print(l[i])
     n.append(i)
 print(n)
 
-MAIN
-
+##MAIN
 l=[3,6,8,23,45,23,65,80,65,120,23]
 ans=[]
 for elm in l:
