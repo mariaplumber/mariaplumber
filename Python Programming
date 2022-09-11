@@ -987,6 +987,50 @@ Enter1234
 10
 4
 
+##
+i= input("Enter a string  ")
+rev=" "
+for z in i:
+    rev= z+rev
+print(rev)
+OUTPUT: Enter a string  abcde
+        edcba
+        
+##
+s='abcdef'
+def pal(s):
+    rev= " "
+    for c in s:
+        rev=c+rev
+    if(s==rev):
+        return True
+    else:
+        return False
+print(pal(s))
+OUTPUT: False
+
+##
+def add(a,b):
+    return a+b
+ans = lambda a,b : a+b 
+double = lambda x: x*2
+print(ans(1,2))
+print(double(9))
+
+OUTPUT: False
+
+##
+l= [1,2,3,4,5,6]
+flist = list(filter(lambda x:x%2==0, l))
+print(flist)
+mlist = list(map(lambda x:x*2,l))
+print(mlist)
+mlist = list(map(lambda x:x%2==0,l))
+print(mlist)
+
+[2, 4, 6]
+[2, 4, 6, 8, 10, 12]
+[False, True, False, True, False, True]
 
 
 
