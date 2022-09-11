@@ -914,13 +914,14 @@ print(y)
 print(z)
 
 values()
+
 print(x)
 print(y)
 print(z)
 
 x=10
 y=40
-z=200
+z=300
 print(x)
 print(y)
 print(z)
@@ -968,6 +969,23 @@ print(z)
 (40, 20)
 60
 20
+
+##
+f = int(input("Enter"))
+def some(f):
+    sumv=0
+    count=0
+    while f!=0:
+        sumv+=f%10
+        f=f//10
+        count+=1
+    print(sumv)
+    print(count)
+some(f)
+
+Enter1234
+10
+4
 
 
 
