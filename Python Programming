@@ -909,26 +909,45 @@ def values():
     print(x)
     print(y)
     print(z)
- print(x)
- print(y)
- print(z)
+print(x)
+print(y)
+print(z)
 
- values()
- print(x)
- print(y)
- print(z) 
+values()
+print(x)
+print(y)
+print(z)
 
- x=10
- y=40
- z=200
- print(x)
- print(y)
- print(z)  
+x=10
+y=40
+z=200
+print(x)
+print(y)
+print(z)
 
- values()
- print(x)
- print(y)
- print(z)
+values()
+print(x)
+print(y)
+print(z)
+
+0
+10
+100
+0
+20
+200
+0
+10
+200
+10
+40
+200
+10
+20
+200
+10
+40
+200
  
  ##
  def args(name, sname, std, div)
