@@ -984,6 +984,12 @@ def myfunc(country="India"):
 myfunc("USA")
 myfunc("England")
 myfunc()
+
+def myfunc(x):
+    return 5 * x
+print(myfunc(3))
+print(myfunc(4))
+print(myfunc(5))
  
  ##
  def args(name, sname, std, div)
@@ -1032,6 +1038,15 @@ OUTPUT: Enter a string  abcde
         edcba
         
 ##
+i = input("Enter the string")
+def myfunc(i):
+    rev = " "
+    for elm in i:
+        rev = elm + rev
+    print(rev)
+myfunc(i)
+
+##
 s='abcdef'
 def pal(s):
     rev= " "
@@ -1045,9 +1060,9 @@ print(pal(s))
 OUTPUT: False
 
 ##
-def add(a,b):
-    return a+b
-ans = lambda a,b : a+b 
+def add(a,b):                    # NOTE: When you use return in a function, you print the whole function at last but when you don't return something and it is a 
+    return a+b                   #       normal program in a function then you print the necessary output and the only CALL the function for the program to get  
+ans = lambda a,b : a+b            #      executed
 double = lambda x: x*2
 print(ans(1,2))
 print(double(9))
@@ -1066,6 +1081,8 @@ print(mlist)
 [2, 4, 6]
 [2, 4, 6, 8, 10, 12]
 [False, True, False, True, False, True]
+
+
 
 
 
