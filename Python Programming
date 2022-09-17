@@ -1096,6 +1096,18 @@ def fib(i):
 print(fib(i))
 OUTPUT: Enter the number9
         34
+ ##       
+l= [2,5,10,15,20,25,30,35,40]
+flist = list(filter(lambda x:(x%5==0 and x%2==0), l))
+print(flist)
+OUTPUT: [10, 20, 30, 40]
+##
+ans = lambda a,b : a+b
+double = lambda x: (x%2==0 and x%5==0)
+print(ans(1,2))
+print(double(5))
+OUTPUT: 3
+       False
 
 
 
