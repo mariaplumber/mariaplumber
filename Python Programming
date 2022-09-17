@@ -949,6 +949,41 @@ print(z)
 10
 40
 200
+
+##
+def my():
+    print("maria")
+my()
+
+def myfunc(name):
+    print(name)
+myfunc("maria")
+
+def myfunc(name, fname):
+    print(name, fname)
+myfunc("maria", "taher") 
+
+def myfunc(name, sname):
+    print(name, "taher", sname)
+myfunc("maria", "plumber")
+
+def myfunc(*kids):  #for unlnown number of arguments
+    print("Youngest kid is ", kids[2])
+myfunc("Mefu", "Taher", "Saifee", "Allu")
+
+def myfunc(child1, child2, child3, child4):
+    print("Youngest child is", child4)
+myfunc("Mefu", "Taher", "Allu", "Saifee")
+
+def myfunc(**kids):  #for unknown number of keyword arguments
+    print("His last name is", kids["lname"])
+myfunc(name="maria", sname="taher", lname="plumber")
+
+def myfunc(country="India"):
+    print("I am from",  country)
+myfunc("USA")
+myfunc("England")
+myfunc()
  
  ##
  def args(name, sname, std, div)
@@ -1031,6 +1066,8 @@ print(mlist)
 [2, 4, 6]
 [2, 4, 6, 8, 10, 12]
 [False, True, False, True, False, True]
+
+
 
 
 
