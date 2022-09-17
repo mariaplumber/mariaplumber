@@ -1082,6 +1082,20 @@ print(mlist)
 [2, 4, 6, 8, 10, 12]
 [False, True, False, True, False, True]
 
+##Fibonacci Series
+i= int(input("Enter the number"))
+def fib(i):
+    if i<0:
+        return 0
+    elif i==0:
+        return 0
+    elif i==1 or i==2:
+        return 1
+    else:
+        return fib(i-1) + fib(i-2)
+print(fib(i))
+OUTPUT: Enter the number9
+        34
 
 
 
