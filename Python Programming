@@ -1231,6 +1231,20 @@ Enter a number0
 cannot divide with zero
 Enter a number
 
+##
+sumv=0
+while True:
+    try:
+        n=input("Enter a number")
+        if n=='q':
+            break
+        if int(n)>50:
+            raise ValueError("Enter vlaue less than 50")
+        sumv+=int(n)
+    except ValueError as v:
+        print(v)
+print(sumv)
+
 
 
 
