@@ -1128,8 +1128,8 @@ OUTPUT: [2, 4, 6, 8, 10, 12, 14]
 l= [1,2,3,4,5,6]
 l1= [1,2,3,4,5,6]
 print(l)
-flist = list(map(lambda x,y: x+y, l, l1))
-print(flist)
+mlist = list(map(lambda x,y: x+y, l, l1))
+print(mlist)
 OUTPUT: [1, 2, 3, 4, 5, 6]
         [2, 4, 6, 8, 10, 12]
         
