@@ -1171,6 +1171,44 @@ Enter a number4
 Enter a number0
 9
 
+##
+print(dir(locals()['__bulletins__']))
+sumv = 0
+while True:
+    n= input("Enter a number")
+    try:
+        sumv+=int(n)
+    except Exception as e:
+        print(sys.exc_info()[0])
+        print(e.__class__)
+        print("Invalid input")
+    if(n=='0'):
+        break
+print(sumv)
+
+OUTPUT: (will show the error)
+
+##
+while True:
+    n= (input("Enter a number"))
+    if n=='q':
+        break
+    try:
+        ans= (1/int(n))
+        print(ans)
+    except:
+        print("Invalid input")
+        
+OUTPUT: Enter a number2
+0.5
+Enter a number3
+0.3333333333333333
+Enter a number4
+0.25
+Enter a numbera
+Invalid input
+Enter a numberq
+
 
 
 
