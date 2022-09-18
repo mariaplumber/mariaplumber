@@ -1132,6 +1132,21 @@ flist = list(map(lambda x,y: x+y, l, l1))
 print(flist)
 OUTPUT: [1, 2, 3, 4, 5, 6]
         [2, 4, 6, 8, 10, 12]
+        
+##
+l= [1,2,3,4,5,6]
+l1= [2,4,6,8,10,12]
+print(l)
+flist = list(filter(lambda x: x in l, l1))
+print(flist)
+OUTPUT: [1, 2, 3, 4, 5, 6]
+        [2, 4, 6]
+
+
+
+
+
+
 
 
 
