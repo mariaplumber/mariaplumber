@@ -1209,6 +1209,28 @@ Enter a numbera
 Invalid input
 Enter a numberq
 
+##while True:
+    n= (input("Enter a number"))
+    if n=='q':
+        break
+    try:
+        ans= (1/int(n))
+        print(ans)
+    except ValueError:
+        print("do not enter string")
+    except ZeroDivisionError:
+        print("cannot divide with zero")
+     
+OUTPUT: Enter a number2
+0.5
+Enter a number4
+0.25
+Enter a numbera
+do not enter string
+Enter a number0
+cannot divide with zero
+Enter a number
+
 
 
 
