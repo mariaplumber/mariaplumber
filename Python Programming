@@ -1153,6 +1153,23 @@ print(flist1 + flist2)
 OUTPUT: [1, 2, 3, 4, 5, 6]
         [2, 4, 6, 8, 10, 12]
         [1, 3, 5, 8, 10, 12]
+        
+ ##
+ sumv = 0
+while True:
+    n= input("Enter a number")
+    try:
+        sumv+=int(n)
+    except:
+        print("Invalid input")
+    if(n=='0'):
+        break
+print(sumv)
+OUTPUT:Enter a number2
+Enter a number3
+Enter a number4
+Enter a number0
+9
 
 
 
