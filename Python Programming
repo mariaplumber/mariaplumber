@@ -1292,6 +1292,50 @@ Enter anumber less than 501
 Enter anumber less than 50q
 10
 
+##
+class OwnError(Exception):
+    pass
+while True:
+    try:
+         n = input ("Enter two numbers and an operand between them")
+         if(n=='q'):
+            break
+         x= n.split()
+         #print(len(x))
+         if len(x)!=3:
+             raise OwnError("Enter 3 values")
+         if not x[0].isdigit():
+            raise OwnError("Enter first operand as an integer")
+         else:
+            a= int(x[0])
+            if x[0]>'50':
+                raise OwnError("Enter first operand less than 50")
+
+         if not x[2].isdigit():
+            raise OwnError("Enter second operand as an integer")
+         else:
+            b= int(x[2])
+            if x[2]>'50':
+                raise OwnError("Enter second operand less than 50")
+
+         if x[1]=='+':
+            ans = a + b
+            print(ans)
+         elif x[1]=='-':
+            ans = a - b
+            print(ans)
+         elif x[1]=='*':
+            ans = a * b
+            print(ans)
+         elif x[1]=='/':
+            ans = a / b
+            print(ans)
+         else:
+            raise OwnError("Enter operand +,-.*,/")
+
+    except OwnError as v:
+        print("Error: ",v)
+
 
 
 
