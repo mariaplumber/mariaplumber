@@ -1308,14 +1308,14 @@ while True:
             raise OwnError("Enter first operand as an integer")
          else:
             a= int(x[0])
-            if x[0]>'50':
+            if a>50:
                 raise OwnError("Enter first operand less than 50")
 
          if not x[2].isdigit():
             raise OwnError("Enter second operand as an integer")
          else:
             b= int(x[2])
-            if x[2]>'50':
+            if b>50:
                 raise OwnError("Enter second operand less than 50")
 
          if x[1]=='+':
