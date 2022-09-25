@@ -1335,6 +1335,55 @@ while True:
 
     except OwnError as v:
         print("Error: ",v)
+        
+ ##
+ class InputError(Exception):
+    pass
+class InputError(Exception):
+    pass
+def checkInput(num):
+    if len(num)!=3:
+        raise InputError("Please enter 3 values")
+    try:
+        op1= int(num[0])
+    except ValueError:
+        raise InputError("Enter first as int")
+    if op1>50:
+        raise InputError("Enter value less than 50 for first")
+    try:
+        op2= int(num[2])
+    except ValueError:
+        raise InputError("Enter second as int")
+    if op1>50:
+        raise InputError("Enter value less than 50 for second")
+    return op1, num[1], op2
+
+def evaluate(op1, o, op2):
+    if o=='+':
+        return op1 + op2
+    elif o=='-':
+        return op1 - op2
+    elif o=='*':
+        return op1 * op2
+    elif o=='/':
+        return op1 / op2
+    else:
+        raise OperandError("Please enrter +-*/ only")
+while True:
+    num = input("Enter 3 values in format 3+4")
+    if num=='q':
+        break
+    try:
+        op1, o, op2=checkInput(num.split())
+        try:
+            ans = evaluate(op1, o, op2)
+            print(op1, o, op2, "=", ans)
+        except OperandError as ope:
+            print("Error Occurred")
+            print(ope)
+    except InputError as inp:
+            print("Error Occurred")
+            print(inp)
 
 
 
