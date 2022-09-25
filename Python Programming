@@ -1246,6 +1246,52 @@ while True:
 print(sumv)
 
 
+l= [1,2,2,3,4,5,2,6,4,3,8,6,9]
+for elm in l:
+    cnt = l.count(elm)
+    if cnt>1:
+        l.remove(elm)
+print(l)
+l= [1,2,2,3,4,5,2,6,4,3,8,6,9]
+new= []
+for elm in l:
+    cnt = l.count(elm)
+    if cnt>1 and (elm not in new):
+        new.append(elm)
+        indlist= []
+        for i in range (len(l)):
+            if elm==l[i]:
+                indlist.append(i)
+        print("Repeated element is:", elm)
+        print("No. of times", elm, "is repeated:", len(indlist))
+        
+ ##       
+class OwnError(Exception):
+    pass
+import sys
+sumv=0
+while True:
+    try:
+        n= input("Enter anumber less than 50")
+        if(n=='q'):
+            break
+        if int(n)>50:
+            raise OwnError("Enter value less than 50")
+        sumv+=int(n)
+    except OwnError as v:
+        print("error")
+        print(v)
+print(sumv)
+OUTPUT: Enter anumber less than 50 58
+error
+Enter value less than 50
+Enter anumber less than 504
+Enter anumber less than 503
+Enter anumber less than 502
+Enter anumber less than 501
+Enter anumber less than 50q
+10
+
 
 
 
