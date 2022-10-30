@@ -1384,6 +1384,111 @@ while True:
     except InputError as inp:
             print("Error Occurred")
             print(inp)
+            
+     ##BANK APP##
+    
+acname= ['user1', 'user2', 'user3', 'user4']
+acpass= ['abc1', 'def2', 'ghi3', 'jkl3']
+acbal= [1000, 2000, 3000, 4000]
+while True:
+    print("1. login")
+    print("2. create account")
+    n = input("Please choose: ")
+    if (n=='1'):
+        a= input("Enter account name: ")
+
+        if(a in acname):
+            b= input("Enter password: ")
+            if (acname.index(a)==acpass.index(b)):
+                print("Welcome")
+                print("1. Check Balance")
+                print("2. Deposit")
+                print("3. Withdraw")
+                print("4. Transfer")
+                print("4. Exit")
+                c= input("Please Choose: ")
+                if(c=='1'):
+                    print(acbal[acname.index(a)])
+                elif(c=='2'):
+                    d= int(input("Enter the amount for deposit: "))
+                    acbal[acname.index(a)]+=d
+                    print(acbal[acname.index(a)])
+                elif(c=='3'):
+                    e= int(input("Enter the value you want to withdraw: "))
+                    acbal[acname.index(a)]-=e
+                    print(acbal[acname.index(a)])
+                elif(c=='4'):
+                    f= input("Enter the username of the person for transfer: ")
+                    if(f in acname):
+                        g= int(input("Enter the amount you want to transfer"))
+                        acbal[acname.index(a)]-=g
+                        acbal[acname.index(f)]+=g
+                        print("Balance left in your account",acbal[acname.index(a)])
+                        print("Total balance in the transferring account",acbal[acname.index(f)])
+                elif(c=='5'):
+                    break
+    elif(n=='2'):
+        x= input("Enter the username: ")
+        if (x.isdigit()==True) or (x.isalpha()==True):
+            print("The username should be alphanumeric")
+        elif (len(x)<4):
+            print("Length should be greater or equal to 4")
+        else:
+            acname.append(x)
+        
+
+        y= input("Enter the password: ")
+        if (y.isdigit()==True) or (y.isalpha()==True):
+            print("The password should be alphanumeric")
+        elif (len(x)<4):
+            print("Length should be greater than or equal to 4")
+        else:
+            acpass.append(y)
+            print(acname)
+            print(acpass)
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+     
+
+
 
 
 
