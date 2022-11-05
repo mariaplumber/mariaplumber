@@ -1473,6 +1473,36 @@ print(f)
 g= np.random.randint(10,100,(4,5))  #10 is lower value and 100 is upper
 print(g)
 
+import numpy as np
+a= np.array([[1,2,3], [1,2,3]], dtypr=np.int8)
+print(a)
+print(a.ndim, a.shape, a.dtype)
+
+b= np.zeros((4,5), dtype=np.int8)
+print(b)
+
+c=np.arange(1,20)
+print(c)
+
+d= np.ones((4,5), dtype=np.int8)
+print(d)
+
+
+e= np.concatenate([b,c], axis=1)  #agar column concatenate kariye to banne row ni values same hovi joiye 
+print(e)                #agar row concatenate kariye to banne column ni values same hovi joiye
+
+f= np.concatenate([b,c])
+print(f)
+
+g= np.random.randint(10,100,(4,5))  #10 is lower value and 100 is upper
+print(g)
+
+h= np.ones((5,5))
+h+=29
+print(h)
+
+
+
         
         
 
