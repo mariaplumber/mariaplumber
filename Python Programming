@@ -1501,6 +1501,56 @@ h= np.ones((5,5))
 h+=29
 print(h)
 
+a= np.array([[1,2,3], [1,2,3]], dtype=np.int8)
+print(a.shape)
+b= a.reshape(1,6)
+print(b)
+print(b.shape)
+
+c= np.arange(1,100)
+print(c)
+d= c.reshape(10,10)
+print(c)
+print(c>50)
+'''
+'''
+a1= np.arange(1,51)
+print(a1)
+print(a1.shape)
+a2= a1.reshape(5,5)
+print(a2)
+b1= np.arange(26, 51)
+print(b1)
+print(b1.shape)
+b2= b1.reshape(5,5)
+print(b2)
+print(a2+b2)
+print(b2-a2)
+print(b2*a2)
+print(b2/a2)
+'''
+'''
+c= np.arange(1,101)
+c1= c.reshape(10,10)
+print(c1)
+z= c1[2:6, 4:9]
+print(z)
+x= c1[:6, :4]
+print(x)
+w= c1[2:6, 4:]
+y= c1[::2, ::2]
+t= c1[::2, 6]
+s= c1[[1,5,8], :] #1,5,8 rows and all columns
+u= c1[::2, ::2]=0
+v= c1[[1,5,8], :]=100
+'''
+
+c= np.zeros((10,10), dtype=np.int8)
+#print(c)
+z=c[::2, ::2] =1
+v=c[1::2, 1::2] =1  #1 is the starting step, middle is the ending step, last is skipping
+print(c)
+
 
 
         
