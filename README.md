@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @mariaplumber
 - 👀 I’m interested in AI & ML projects and android development
-- 🌱 I’m currently in my 2nd year pursuing bachelors in CSE with specialization in AI & ML
-- 💞️ I’m looking to collaborate on 
+- 🌱 I’m currently in my 3rd year pursuing bachelors in CSE with specialization in AI & ML
 - 📫 How to reach me: email: mariyataher1165@gmail.com
 
 <!---
