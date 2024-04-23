@@ -21,6 +21,15 @@ x=10
 print("Hello" , str(x))  OUTPUT: Hello 10
 
 x=10
+print(123 + x)      OUTPUT: 133
+
+x=10
+print(123 , x)      OUTPUT: 123 10
+
+x="10"
+print(123+ int(x))   OUTPUT: 133
+
+x=10
 y=10
 print(id(x))   OUTPUT: 2170489104976
 print(id(y))           2170489104976
