@@ -1,0 +1,550 @@
+print(8*2) #Multiplication
+
+#variables
+height=1.7
+weight=52.3
+bmi=height/weight**2
+print(bmi)
+rate=12.50
+hours=7
+pay=rate*hours
+print(pay)
+
+#types in python
+print(type(bmi)) #float
+days_in_a_week=7
+print(type(days_in_a_week)) #int
+x="Hello" #string
+print(type(x))
+y=True
+print(type(y)) #boolean
+m='ab'+'cd'  #can also be written as print('ab'+'cd')
+print(m)
+
+#Exercise 1
+monthly_savings=100
+num_months=12
+new_savings=monthly_savings*num_months
+print(new_savings)
+total_savings=1000+new_savings #1000 was existing savings and we could even create a variable for it
+print(total_savings)
+print("I saved "+ str(new_savings)+" this year and my total savings became "+ str(total_savings))
+#print("I saved "+new_savings+" this year and my total savings became "+total_savings) #can only concatenate str (not "int") to str
+
+#Exercise 2
+intro= "Hello"
+print(intro + intro)
+print('hi'+'hi')
+doubleintro=intro+intro
+print(doubleintro)
+
+#Exercise 3
+pi_string="3.1484887"
+pi_float=float(pi_string)
+print(type(pi_float))
+
+#Practice 1
+print("I can add integers, like " + str(5) + " to strings.")
+print(False+False)
+print(True+False)
+print(True+True)
+print("I said " + ("Hey " * 2) + "Hey!")
+#print("The correct answer to this multiple choice exercise is answer number " + 2) is wrong
+x=1
+print(x)
+x=x+1
+print(x)
+
+#if-else
+x=20
+if x<5:
+    print("Smaller")
+elif x==5:             #Here you cannot write x=5 as it is an assignment operator
+    print("Equal")
+else:
+    print("Greater")
+print("Finish")
+
+#while
+x=5
+while x>0:
+    print(x)
+    x=x-1
+##
+x= input("Enter a number")
+x= int(x)
+while x>0:
+    print(x)
+    x=x-1
+
+x=0.6
+x=30*x*(1-x)  #Here the x will first be put on RHS and the calculations will be done only then will it be assigned to the ass.ope. x
+print(x) #Now the old value of x ie 0.6 will be replaced with thenew value of x ie the output 7.2
+
+j=23
+k=j%4 #%is the remainder operator.
+print(k)
+
+x=1+2**3/4*5  #P,E,MD,AS and left to right if both MD and AS are there.
+print(x)
+
+sval='123' #one twenty three
+print(type(sval))
+ival=int(sval)
+print(type(ival))
+print(ival+4)  #123+4=127
+#print(int(sval)+4)
+
+#nuv="Hello Bob"
+#nsv=int(nuv) #This will give error because only NUMBERS in a strng can be converted to int like upper case
+
+#input
+'''nam=input('Who are you?')
+print('Welcome',nam) #Maria, the input is assigned to the variable nam and it prints Welcome Maria
+
+inp= input('Europe Floor? ') #If we want to read a number from the user, we must convert it from a string to a number using a type
+print('USA floor is',int(inp)+1)''' #(cont.) conversion function. (Input gives you back a srtirng and doesn't give you back a number)
+#So if we type 0 for the input then it will be in the form of a string '0' and then int will convert it into integer.
+
+x=5
+if x==5: print('Equals')
+if x<=6: print('Less than equal to')
+if x>=4: print('Greater than equal to')
+if x>4: print('Greater than')
+if x<6: print('Less than')
+if x!=4: print('Not equal to')
+
+#indentation                        #0                    
+for i in range(5):                  #done with i 0
+    print(i)                        #1
+    if i>2:                         #done with i 1
+        print("Bigger than 2")      #2
+    print("done with i", i)         #done with i 2
+print("All done")                   #3
+                                    #Bigger than 2
+                                    #done with i 3
+                                    #4
+                                    #Bigger than 2
+                                    #done with i 4
+                                    #All done
+a=43
+if a>1:
+    print("Greater than 1")
+if a<100:
+    print("Less than 100")
+print("All done") 
+b=50                    #OUTPUT: All Done
+if b<20:
+    print("Smaller")    # for multiple elif, order matters because if at first it is elif i<20
+elif b<10:              # then it's i<10, it will automatically stop at i<20
+    print("Medium")
+print("All done")
+##
+'''Try and except: If there is a line of code that you know is gonna throwback and it's gonna blowup from past experiences, 
+you can use try and except. you surround a dangerous section of code with try and except. if the code in try section works, 
+except is skipped and if try fails, it jumps to except section. '''
+istr= "Hello Maria"
+try:                   #skips to except
+    int(istr)
+except:
+    istr= -1
+print("First", istr)
+##
+istr= 3.5
+try:               #assigning a variable to int(str) 
+    spc=int(istr)
+except:
+    spc= -1
+print("First", spc)
+##
+istr= '123'           #try succeses
+try:
+    int(istr)
+except:
+    istr= -1
+print("Second", istr)
+##
+try:                   #need to be careful with multiple lines in try because if it blowsup at one part ie int(istr) it won't
+    int(istr)          #consider the print("Hey") part and skip to except. So that line will be gone
+    print("Hey")
+except:
+    istr= -1
+print("First", istr)
+##
+rawstr = input('Enter a number:')
+try:
+    ival=int(rawstr)                              #sometimes it's necessary to add another variable, here ival
+except:
+    ival= -1
+if ival>0 :
+    print("Nice work")
+else:
+    print('Not a number')
+
+'''
+rawstr = input('Enter a number:')
+try:
+    int(rawstr)
+except:
+    rawstr= -1
+if rawstr>0 :        #Here try int(rawstr)>0 then it will work
+    print("Nice work")
+else:
+    print('Not a number') '''
+
+#Rewrite your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours.
+hours=float(input("Enter hours"))
+#print(hours)                                   #Enter hours 45
+rate=float(input("Enter rate"))                 #Enter rate 10
+#print(rate)                                    #475.0
+if hours>40:
+    gross=(40*rate+rate*1.5*(hours-40))
+else:
+    gross= (hours*rate)
+print(gross)
+
+#Rewrite your pay program using try and except so that your program handles non-numeric input gracefully.
+hs=input("Enter hours")
+try:
+    hours=float(hs)
+    rt=input("Enter rate")
+    try:
+        rate=float(rt)
+        if hours>40:
+            gross=(40*rate+rate*1.5*(hours-40))
+            print(gross)
+        else:
+            gross= (hours*rate)
+            print(gross)        
+    except:
+        print("Enter rate in number")
+except:
+    print("Enter hours in number")
+##
+map= int(input("Enter a number"))
+try:
+    print(map/0)
+except:
+    print("Not possible")
+##
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+
+##define function
+def thing()
+    print("Hello world")
+    print("Have fun")
+#def is used to remember the code and invoke it later on. Here it will store the 2 lines in thing() and can be later invoked
+# using the same but there will be no output here. Output will come if it is invoked.
+thing()           
+print("zip")        #output: hello world, have fun, zip, hello world, have fun (vertically)
+thing()
+##
+big = max('Hello world')   #will print the last of letters ie w
+print(big)
+tiny= min("Hello world")   #will print the first of letters ie space in this case so blank output  
+print(tiny)
+##
+print(1 + 2 * float(3) / 4-5) 
+##
+x = 5
+print('Hello')
+def print_lyrics():
+    print("I'm a lumberjack, and I'm okay.")
+    print('I sleep all night and I work all day.')
+print('Yo')
+print_lyrics()
+x = x + 2
+print(x)
+## 
+def greet(lang):
+    if lang=='es':
+        print("Hola")
+    elif lang=='fr':
+        print("Bonjour")
+    else:                    #once else is written, we can't write anything after it like we did after if & elif.
+        print("Hello")
+greet('en')
+greet('es')
+greet('fr')
+#A parameter is a variable which  we use in the function definition.  It is a “handle” that allows the code in the function
+#to access the arguments for a particular function invocation. Here lang is a parameter.
+
+##return function
+def greet():
+    return("Hello")
+print(greet(), "Maria")
+print(greet(), "Samina")
+#When python goes into return, it does 2 basic functions ie it fininshes the invocation there and doesn't go to the next
+#line. So no need to type another line after return. It even works without the parameter and stops the execution there.
+def greet(lang):
+    if lang=='es':
+        return("Hola")
+    elif lang=='fr':
+        return("Bonjour")
+    else:                    
+        return("Hello")
+print(greet('en'), "Taher") #we had to print here because in the function, instead of printing, it's returning unlike  
+print(greet('es'), "Zahra") #last to last case
+print(greet('fr'), "Samina")
+#Here instead of printing we used a function "return" that takes in some input and returns an output
+
+##
+def greet():
+    return "Hello"
+
+print(greet(), "Glenn")
+print(greet(), "Sally")
+##
+def addtwo(a,b):
+    added=a+b
+    return added
+x= addtwo(3489, 389438)
+print(x)
+
+def addtwo(a,b):
+    addtwo= a+b
+    return addtwo
+x= int(input("Enter first number"))
+y= int(input("Enbter second number"))
+a= addtwo(x,y)
+print(a)
+
+##
+hours=float(input("Enter the hours"))
+rate=float(input("Enter the rate"))
+def computepay(hours,rate):
+    if hours>40:
+        pay=(40*rate+(hours-40)*rate*1.5)
+    else:
+        pay=(hours*rate)
+    return pay
+gross=computepay(hours,rate)
+print(gross)
+
+##
+def computepay(hours, rate):
+    if hours>40:
+        gross= (rate*40 + rate*1.5*(hours-40))
+    else:
+        gross= hours*rate
+    return gross
+hs= input("Enter hours")
+try:
+    hrs=int(hs)
+    rt= input("Enter rate")
+    try:
+        rte=int(rt)    #the variable assignment is necessary otherwise the answer will not come
+        gs= computepay(hrs,rte)
+        print(gs)
+    except:
+        print("Enter rate in integer")
+except:
+    print("Enter hours in integer")
+
+##loops and iterations 1) while loop: it acts just like an if statement ex: while n>0, if true execute bottom and not then skip
+n=5
+while n>0:
+    print(n)
+    n=n-1      # will go back to n>0 statement from here till n=0 or n<0
+print("blastoff!")
+print(n)
+
+#infinite loop
+n = 5
+while n > 0 :
+    print('Lather')
+    print('Rinse')
+print('Dry off!')
+#zero trip loop
+n=0
+while n<0:
+    print('Lather')   #the loop will not run
+    print('Rinse')
+print('dry off')  #this will be the output
+#getting out of the loop (very interesting) 'BREAK'
+while True:
+    line= input("> ") #once the loop breaks it doesnt go back
+    if line=="done":
+        break
+    print(line) #if we put this line under the input and later give done as the input, it will print done and WOW both and we
+print("WOW")    #dont want that because it is supposed to break after done
+
+#'CONTINUE' It says stop this iteration and go back to the top of the loop
+while True:
+    line= input("> ")
+    if line[0]=='#':  #it wont print the line who's 0th character is # and go back to the top of the loop again
+        continue       # and will break the loop if input is 'done' else it will print the line after whatever input is 
+    if line=="done":  #given in '> '
+        break
+    print(line)
+print("WOW")  #WHILE loop comes under indefinite loops
+
+# FOR loops (definite loops) will loop through some set of things. It might be a set of characters in a string or it might be
+#a set of strings in a list of strings etc. Its gonna run a finite number of times depending on the thing its looping through
+
+for i in [5,4,3,2,1]: #for and in are keywords and i is a variable or an assignment statement so i is going to be assigned
+    print(i) #5 different times to 5 different values and the loop is going to run 5 times.
+print("done")
+#
+friends= ['hi', 'gi', 'fi'] #friends, a variable which is list of strings and friend isthe iteration variable
+for friend in friends:
+    print("happy new year", friend)  #could be done like above as well
+print("WOW") 
+#for loops decide how many times to run the loop in a single line of code itself but we had to do the same with 3 lines 
+#in a while loop
+
+# find the biggest number
+largest_so_far= -1
+print('Before', largest_so_far)
+for the_num in [9, 41, 12, 3, 74, 15]:
+    if the_num>largest_so_far:  #the new larger number will be applied to largest_so_far hence largest_so_far=the_num 
+        largest_so_far=the_num  #and not the_num=largest_so_far
+    print(the_num, largest_so_far) #bringing this line in the same indent as above line will only print the larger numbers
+print('After', largest_so_far)   #because then it will work according to the if statement and not print evthng from loop
+
+#Counting in loop
+zork=0
+print("Before", zork)
+for thing in [9, 41, 12, 3, 74, 15]:
+    zork=zork+1   #adding 1 in ZORK and variable is also ZORK
+    print(zork, thing)
+print("After",zork) #the loop will end above so the final zork will be printed here
+
+#Summing in a loop
+zork=0
+print("Before", zork)
+for thing in [9, 41, 12, 3, 74, 15]:
+    zork=zork+thing  #adding THING in ZORK and variable is also ZORK
+    print(zork, thing)
+print("After",zork)
+
+#Average in a loop
+count=0
+sum=0
+print("Before", count, sum)
+for thing in [9, 41, 12, 3, 74, 15]:
+    count=count+1
+    sum=sum+thing
+    print(count, thing, sum)
+print("After", count, sum, sum/count)
+
+#Filtering in a loop
+print("Before")
+for large_number in [9, 41, 12, 3, 74, 15]:
+    if large_number>20:
+        print("Large number", large_number)
+print("After")
+
+#Search using a boolean variable
+found=False
+print("Before", found)
+for thing in [9, 41, 12, 3, 74, 15]:
+    if thing==3:
+        found=True #Till 3 is found in the list it will stay false and after it is found all the values become true.
+    print(thing, found)
+print("After", found) #At the end of the loop we come to know that there was a 3 in there.
+
+#Finding the smallest number without assuming any number using None as a keyword
+zork= None     #zork is the smallest number and None is the first value without actually knowing the number
+print("Before")
+for thing in [9, 41, 12, 3, 74, 15]: #Note: we used is None instead of == None. reason in below question
+    if zork is None:   #zork agar first value (None) hai to usko print karo elif zork agar None se chhota hai
+        zork=thing     #to usko print karo, instead of assuming the largest or smallest nos like previous cases
+    elif thing<zork:
+        zork=thing
+    print(zork, thing)
+print("After", zork)
+
+#Finding largest using None
+lrg= None  #lrg= largest number and None is the first place of loop 
+print("Before")
+for value in [9, 41, 12, 3, 74, 15]:
+    if lrg is None: #This part will stay false for the rest of the iterations of the loop exxcept first iteration.
+        lrg=value   #lrg to None hai hi but agar None hi large rehta hai aage loop mein bhi then wo None wali value hi large ho jayegi
+    elif value>lrg: #But agar koi aur value pichle lrg se badi ho jaati hai then lrg becomes the new value
+        lrg=value   #we cant write value>None because > is not supported in the instances of None type but == is supported
+    print(lrg, value) #like 'if lrg==None' but we prefer IS
+print("After", lrg)
+#IS is similar to but stronger than ==. 0==0.0 value wise but "0 is 0.0" is false typewise. "is not" is also a
+#logical operator like ....is not None or ....is not False.
+#if dealing with int, float or strings use == and if dealing with booleans and None types, use IS.
+
+#STRINGS
+num= input("Enter")
+x=num-10 #error because if 100 is entered as input itll be considered a string do int(num)
+print(x)
+#
+word= 'banana'
+letter= word[0]  # [] is the index character
+print(letter)
+#
+x=4
+letter=word[x-1]
+print(letter)
+#
+print(word[10]) #error
+#
+print(len(word)) #will print the length of the word where len is a function
+#looping through the string
+word= 'banana'  #here word[index] means the letters b a n a n a and index means positions ie 1 2 3..of the letters 
+index=0  #index is the iteration variable
+while index<len(word): #index will go to 0-5 hence index<len(word)
+    #letter=word[index]
+    print(index,word[index])
+    index=index+1
+#same with for loop
+word='banana'
+index=0
+for letter in word:       #here in the output index will start from 0 and end with 5 with the letters
+    print(index,letter)  #exchanging lines 508 and 509 then the index will start from 1 and end with 6
+    index=index+1
+#counting in loop
+word = 'banana'
+count = 0
+for letter in word :
+    if letter == 'a' : 
+       count = count + 1
+print(count)
+#similar
+word='bananannn'
+count=0
+for letter in word:  #the count will increase only when the letter 'a' comes
+    if letter=='a': 
+        count=count+1
+    print(letter, count)  #run it and see
+#biggest and the smallest letter
+word='banana'
+big=max(word)  #llry for min
+print(big)
+#IN the string or not
+word='bananannn'
+if 'n' in word:
+    print('Found')
+#similar
+word= 'banana'
+for letter in word:
+    print(letter)
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
