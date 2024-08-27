@@ -563,7 +563,23 @@ for elm in l1:
                 print("")
      elif(minvs>elm and minvs!=minv):
         minvs=elm
-        
+print(minvs)
+OR
+l = [54,76,32,98,1,43,22,45]
+minv=l[0]
+minvs=l[1]
+if minv<minvs:
+    minv=l[0]
+    minvs=l[1]
+elif minvs<minv:
+    minvs=l[0]
+    minv=l[1]
+for elm in l[2:]:
+    if elm<minv:
+        minvs=minv
+        minv=elm
+    elif elm<minvs:
+        minvs=elm
 print(minvs)
 ###
 print("Enter q to terminate")
