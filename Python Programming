@@ -589,6 +589,19 @@ while val!="q":
     sumv+=int(val)
     val=input("Enter a number")
 print(sumv)
+OR
+print("Enter q to terminate")
+sumv=0
+while True:
+    inp=input("Enter a number ")
+    if inp=='q':
+        break
+    try:
+        val=int(inp)
+        sumv=sumv+val
+    except:
+        print("Enter a number or enter q to terminate")
+print(sumv)
 
 Enter q to terminate
 Enter a number1
