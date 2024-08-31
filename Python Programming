@@ -702,7 +702,28 @@ sum= 54321
 val= 0
 digits= 5
 sum= 54321
+OR
 
+inp=input("Enter the number ")
+val=int(inp)
+man=[]
+while val!=0: #getting the remainder that is last value from the number
+    rem=val%10
+    print("digit = ", rem)
+    val=val//10 #removing the last value by dividing with 10 so the rest of the loop can function with quotient
+    man.append(str(rem)) #necessary to convert to string
+print(man)
+result=''.join(man)  #use join to convert list to string
+print(result)
+OUTPUT:Enter the number 4365
+digit =  5
+digit =  6
+digit =  3
+digit =  4
+['5', '6', '3', '4']
+5634
+
+##
 for i in range(10):
     print(i)
     if(i==3):  #here it will skip this iteration and won't print something
