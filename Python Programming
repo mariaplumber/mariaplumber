@@ -610,6 +610,22 @@ Enter a number1
 Enter a numberq
 3
 
+print("Sum of individual digits")
+inp=input("Enter a string ")
+join=list(inp)
+print(join)
+sumv=0
+for elm in join:
+    try:
+        val=int(elm)
+        sumv=sumv+val
+    except:
+        print("Enter only number string in the input")
+print(sumv)
+OUTPUT: Enter a string 2467627
+['2', '4', '6', '7', '6', '2', '7']
+34
+
 val= int(input("enter a value"))
 sumv=0
 count=0
