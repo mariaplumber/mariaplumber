@@ -625,7 +625,22 @@ print(sumv)
 OUTPUT: Enter a string 2467627
 ['2', '4', '6', '7', '6', '2', '7']
 34
-
+##
+inp=input("Enter a string ")
+join=[]
+sumv=0
+for char in inp:
+    if char.isdigit():
+        val=int(char)
+        join.append(val)
+print(join)
+for elm in join:
+    sumv=sumv+elm
+print(sumv)
+Enter a string gyfr75ry75y87gh8eyh8wr
+[7, 5, 7, 5, 8, 7, 8, 8]
+55
+##
 val= int(input("enter a value"))
 sumv=0
 count=0
